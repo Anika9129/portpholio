@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .hero-img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .hero-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">Welcome to Portfolio Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-light py-5">
+      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="mb-4 mb-lg-0">
+          <h1 class="display-4 fw-bold">Hi, I'm Anika</h1>
+          <p class="text-primary h5">Frontend Developer</p>
+          <p class="text-muted">High level experience in web design and development, producing quality work.</p>
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+        <img src="image1.jpg" alt="Anika Profile" class="img-fluid rounded hero-img" style="max-width: 350px;" />
+      </div>
+    </header>
+
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2>About Me</h2>
+        <p class="text-muted mb-4">My introduction</p>
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-3">
+            <img src="about.jpg" alt="Anikas About" class="img-fluid rounded hero-img" />
+          </div>
+          <div class="col-md-8">
+            <p>Web developer with extensive knowledge and years of experience, working in web technologies and UI/UX design, delivering quality work.</p>
+            <div class="row text-center mt-4">
+              <div class="col">
+                <h4 class="text-primary">08+</h4>
+                <p>Years Experience</p>
+              </div>
+              <div class="col">
+                <h4 class="text-primary">20+</h4>
+                <p>Completed Projects</p>
+              </div>
+              <div class="col">
+                <h4 class="text-primary">5+</h4>
+                <p>Companies Worked</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-primary mt-3">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Skills</h2>
+        <p class="text-muted">My technical level</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Frontend</h5>
+                <ul class="list-unstyled">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Backend</h5>
+                <ul class="list-unstyled">
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Database</h5>
+                <ul class="list-unstyled">
+                  <li>MongoDB</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Languages</h5>
+                <ul class="list-unstyled">
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p class="text-muted">Get in touch</p>
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-start">
+            <p><strong>Email:</strong> anika@example.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Location:</strong> Kanpur, India</p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Your Name" required />
+              <input type="email" class="form-control mb-3" placeholder="Your Email" required />
+              <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <h3>THANK YOU FOR VISIT !</h3>
+      <p class="mb-0">&copy; 2025 Anika. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
